@@ -37,7 +37,8 @@ The developer left a clue that the username being entered is correct/incorrect. 
 
 Vulnerability #1: IDOR
 
-Description:
+Description: 
+I was able to change the ID in the browser, and using BURP, was able to quickly iterate through different userID's to find the secret ones. The other color sites checked to see if I was logged in before giving me that user data. If not, I was redirected. 
 
 ![](idor1.gif)
 
