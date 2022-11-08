@@ -15,37 +15,33 @@ The six possible exploits are:
 
 Each color is vulnerable to only 2 of the 6 possible exploits. First discover which color has the specific vulnerability, then write a short description of how to exploit it, and finally demonstrate it using screenshots compiled into a GIF.
 
-## Blue
-
-Vulnerability #1: Session Hijacking
-Vulnerability #2: SQL Injection
-
-Description:
-
-<img src="blue-vuln1.gif">
-
-
 ## Green
 
-Vulnerability #1: User Enumeration
-Vulnerability #2: Cross Site Scripting
+### Vulnerability #1: User Enumeration
 
 Description:
+The developer left a clue that the username being entered is correct/incorrect. There is a different error class if the password is entered incorrectly for an existing account. Failed vs. Failure class, picture below. 
 
-<img src="green-vuln1.gif">
+![](uegreen.gif)
+
+![](uegreen2.png)
+
+![](uegreen3.png)
+
+### Vulnerability #2: Cross Site Scripting
+
+![](xssgreen1.gif)
 
 
 ## Red
 
 Vulnerability #1: IDOR
-Vulnerability #2: CSRF
 
 Description:
 
-<img src="red-vuln1.gif">
-
+![](idor1.gif)
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+The cross site scripting for green was a little tricky trying to find the right place to inject the xss and then honestly I had a brain-blank and forgot I had to login to view the results. 
 
